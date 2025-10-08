@@ -1,0 +1,10 @@
+.btn-secondary {
+    background: #fff;
+    color: #2a5298;
+    border: 2px solid #ffb347;
+  }
+
+  .btn-secondary:hover, .btn-secondary:focus {
+    background: #ffb347;
+    color: #fff;
+  }
