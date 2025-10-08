@@ -108,6 +108,32 @@
         font-size: 1em;
       }
     }
+
+    .footer {
+      background: var(--secondary-background, #607d8b);
+      color: #fff;
+      text-align: center;
+      padding: 24px 12px 20px 12px;
+      font-size: 1em;
+      margin-top: 48px;
+      border-radius: 0 0 12px 12px;
+      box-shadow: 0 -2px 12px rgba(30,60,114,0.07);
+    }
+    .footer a {
+      color: #ffb347;
+      text-decoration: underline;
+      transition: color 0.2s;
+    }
+    .footer a:hover, .footer a:focus {
+      color: #fff;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      .footer {
+        font-size: 0.95em;
+        padding: 16px 4px 14px 4px;
+      }
+    }
     
   </style>
 
@@ -125,6 +151,9 @@
     </div>
   </section>
   
+  <footer class="footer" id="main-footer">
+    Creado por acm &mdash; Contacto: <a href="mailto:acm@emailficticio.com">acm@emailficticio.com</a> &bull; Tel: (555) 123-4567
+  </footer>
 
 </body>
 </html>
