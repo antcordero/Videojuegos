@@ -134,12 +134,72 @@
         padding: 16px 4px 14px 4px;
       }
     }
+
+    /* Componente menu horizontal */
+
+nav#mainmenu {
+    
+  --logo-width : 64px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-background);
+  position:relative;
+
+  img.logo{
+      width: var(--logo-width);
+  }   
+
+  >a{
+      position:absolute;
+      left:calc( 50% - calc( var(--logo-width) /2) );   
+  }
+
+  ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+      padding: 0;
+      margin:0;
+
+      li{
+          transition: 1s;
+          margin:0;
+          padding:2rem;
+          
+          a { 
+              text-decoration: none;
+              color:var(--primary-color);
+          }
+
+          &:hover{
+              background-color: var(--primary-background);
+              color:var(--secondary-background-hover);
+          }
+      }
+  }
+}
     
   </style>
 
 </head>
 <body>
   
+  <nav id="mainmenu">
+    <ul>   
+      <li><a href="#">Colección</a></li>
+      <li><a href="#">Explorar</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+    <a href="#"><img class="logo" src="/images/videogame-console.png" alt=""></a>
+    <ul>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </nav>
+
   <!--Bloque Hero-->
 
   <section class="hero">
